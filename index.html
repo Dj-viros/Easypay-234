@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EasyPay</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===========================
+LOADER
+=========================== -->
+
+<div id="loader">
+
+    <div class="loader-circle"></div>
+
+    <h2>EasyPay</h2>
+
+    <p>Secure • Fast • Reliable</p>
+
+</div>
+
+<!-- Notification Container -->
+
+<div class="notificationContainer"></div>
+
+<!-- ===========================
+LOGIN PAGE
+=========================== -->
+
+<section id="loginPage" class="page active">
+
+<div class="loginBox">
+
+<div class="logo">
+
+<h1>EasyPay</h1>
+
+<p>Your Trusted Reward Platform</p>
+
+</div>
+
+<h2 style="text-align:center;margin-bottom:25px;">
+
+Welcome Back
+
+</h2>
+
+<form id="loginForm">
+
+<input
+type="text"
+id="loginUser"
+placeholder="Enter Username or Gmail"
+required>
+
+<div class="passwordBox">
+
+<input
+type="password"
+id="loginPassword"
+placeholder="Enter Password"
+required>
+
+<i class="fa-solid fa-eye togglePassword"></i>
+
+</div>
+
+<button type="submit">
+
+Login Securely
+
+</button>
+
+</form>
+
+<div style="text-align:center;margin-top:20px;">
+
+<p>
+
+Don't have an account?
+
+<span id="openRegister">
+
+Create Account
+
+</span>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+REGISTER PAGE
+=========================== -->
+
+<section id="registerPage" class="page">
+
+<div class="registerBox">
+
+<div class="logo">
+
+<h1>EasyPay</h1>
+
+<p>Create Your Account</p>
+
+</div>
+
+<form id="registerForm">
+
+<input
+type="text"
+id="username"
+placeholder="Choose a Username"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your Gmail"
+required>
+
+<div class="passwordBox">
+
+<input
+type="password"
+id="password"
+placeholder="Create Password"
+required>
+
+<i class="fa-solid fa-eye togglePassword"></i>
+
+</div>
+  
+  <div class="passwordBox">
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirm Password"
+required>
+
+<i class="fa-solid fa-eye togglePassword"></i>
+
+  </div>
+  
+<select id="nationality" required>
+
+<option value="">Select Country</option>
+
+<option value="Nigeria">🇳🇬 Nigeria</option>
+
+<option value="Ghana">🇬🇭 Ghana</option>
+
+<option value="Kenya">🇰🇪 Kenya</option>
+
+</select>
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter Phone Number"
+required>
+
+<button type="submit">
+
+Create Account
+
+</button>
+
+</form>
+
+<p>
+
+Already have an account?
+
+<span id="backLogin">
+
+Login
+
+</span>
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ===========================
+HOW EASYPAY WORKS
+=========================== -->
+
+<section id="aboutPage" class="page">
+
+<div class="noticeCard">
+
+<h2>Welcome to EasyPay</h2>
+
+<p>
+
+EasyPay is designed to provide users with a simple and rewarding experience.
+
+</p>
+
+<p>
+
+✔ Receive your welcome reward after registration.
+
+</p>
+
+<p>
+
+✔ Claim your reward every 10 minutes.
+
+</p>
+
+<p>
+
+✔ Invite friends and earn referral rewards.
+
+</p>
+
+<p>
+
+✔ Purchase a suitable EasyPay VCode before requesting withdrawals.
+
+</p>
+
+<p>
+
+✔ Withdrawals are processed after the required verification steps have been completed.
+
+</p>
+
+<button id="continueBtn">
+
+Continue
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Why EasyPay?</h3>
+
+<p>
+
+• Fast interface
+
+</p>
+
+<p>
+
+• Secure user dashboard
+
+</p>
+
+<p>
+
+• Referral rewards
+
+</p>
+
+<p>
+
+• Instant activity notifications
+
+</p>
+
+<p>
+
+• Modern financial experience
+
+</p>
+
+</div>
+
+</section>
+  
+<!-- ===========================
+JOIN COMMUNITY
+=========================== -->
+
+<section id="groupPage" class="page">
+
+<div class="noticeCard">
+
+<h2>Join Our Community</h2>
+
+<p>
+
+Stay updated with the latest EasyPay announcements, payment updates, rewards and important information.
+
+</p>
+
+<p>
+
+Joining our community helps you receive support and important notices quickly.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<button id="joinTelegram">
+
+<i class="fa-brands fa-telegram"></i>
+
+Join Telegram
+
+</button>
+
+<br><br>
+
+<button id="joinWhatsapp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Join WhatsApp
+
+</button>
+
+<br><br>
+
+<button id="skipGroup">
+
+Continue to Dashboard
+
+</button>
+
+</div>
+
+</section>
+  
+<!-- DASHBOARD -->
+
+<section id="dashboard" class="page">
+
+<header>
+
+<div class="topBar">
+
+<div>
+
+<h2>EasyPay</h2>
+
+<p style="color:#9ca3af;font-size:14px;">
+Welcome back,
+<span id="dashboardUser" style="color:#4ADE80;">User</span>
+</p>
+
+</div>
+
+<div style="position:relative;">
+
+<i id="notificationBell"
+class="fa-solid fa-bell"></i>
+
+<span
+id="notificationBadge"
+style="
+position:absolute;
+top:-4px;
+right:-4px;
+width:10px;
+height:10px;
+background:red;
+border-radius:50%;
+display:block;">
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="welcomeCard">
+
+<h3>Good to see you 👋</h3>
+
+<p>
+
+Manage your rewards, referrals and withdrawals from one secure dashboard.
+
+</p>
+
+</div>
+
+<div class="balanceCard">
+
+<div>
+
+<p>Available Balance</p>
+
+<h1 id="balance">
+
+₦250,000
+
+</h1>
+
+</div>
+
+<i
+id="toggleBalance"
+class="fa-solid fa-eye">
+
+</i>
+
+</div>
+
+<div class="rewardCard">
+
+<h3>
+
+Daily Reward
+
+</h3>
+
+<p>
+
+Claim ₦20,000 every 10 minutes.
+
+</p>
+
+<button id="claimReward">
+
+Claim Reward
+
+</button>
+
+<p id="timer">
+
+Ready
+
+</p>
+
+</div>
+  
+<!-- QUICK ACTIONS -->
+
+<div class="quickActions">
+
+<div class="actionCard" id="buyVcode">
+<i class="fa-solid fa-ticket"></i>
+<span>Buy VCode</span>
+</div>
+
+<div class="actionCard" id="withdraw">
+<i class="fa-solid fa-money-bill-transfer"></i>
+<span>Withdraw</span>
+</div>
+
+<div class="actionCard" id="referral">
+<i class="fa-solid fa-user-plus"></i>
+<span>Referral</span>
+</div>
+
+<div class="actionCard" id="history">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<span>History</span>
+</div>
+
+<div class="actionCard" id="support">
+<i class="fa-solid fa-headset"></i>
+<span>Support</span>
+</div>
+
+<div class="actionCard" id="howToEarn">
+<i class="fa-solid fa-circle-info"></i>
+<span>How EasyPay Works</span>
+</div>
+
+</div>
+  
+
+  </div>
+
+
+<!-- ===========================
+     WEEKLY REWARDS
+=========================== -->
+
+<div class="weeklyRewardCard">
+
+<h3>
+<i class="fa-solid fa-gift"></i>
+Weekly Rewards
+</h3>
+
+<p>
+Complete your activities and track your weekly earnings.
+</p>
+
+<div class="rewardProgress">
+
+<span>
+Reward Progress
+</span>
+
+<strong>
+75%
+</strong>
+
+</div>
+
+</div>
+
+
+
+<!-- ===========================
+     RECENT ACTIVITY
+=========================== -->
+
+<div class="recentActivity">
+
+<h3>
+Recent Activity
+</h3>
+
+
+<div class="activityItem">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<div>
+
+<b>
+Account Created
+</b>
+
+<p>
+Welcome bonus received
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="activityItem">
+
+<i class="fa-solid fa-coins"></i>
+
+<div>
+
+<b>
+Reward Claimed
+</b>
+
+<p>
+₦20,000 reward added
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="activityItem">
+
+<i class="fa-solid fa-clock"></i>
+
+<div>
+
+<b>
+Withdrawal
+</b>
+
+<p>
+Waiting for verification
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+<!-- BOTTOM NAVIGATION -->
+
+<!-- BOTTOM NAVIGATION -->
+
+<nav class="bottomNav">
+
+<div class="navItem active" id="navHome">
+<i class="fa-solid fa-house"></i>
+<p>Home</p>
+</div>
+
+<div class="navItem" id="navWithdraw">
+<i class="fa-solid fa-money-bill-transfer"></i>
+<p>Withdraw</p>
+</div>
+
+<div class="navItem" id="navHistory">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<p>History</p>
+</div>
+
+<div class="navItem" id="navProfile">
+<i class="fa-solid fa-user"></i>
+<p>Profile</p>
+</div>
+
+</nav>
+
+</section>
+
+
+
+<!-- Buy VCode Page starts here -->
+
+<section id="buyVcodePage" class="page">
+
+<div class="pageHeader">
+
+<button class="backBtn" onclick="showPage('dashboard')">
+<i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<h2>Buy EasyPay VCode</h2>
+
+</div>
+
+<div class="noticeCard">
+
+<h3>Important Notice</h3>
+
+<p>
+If you are not ready to purchase a VCode, please go back.
+After purchasing, send the copied message below to my Telegram DM.
+If Telegram is unavailable, use WhatsApp instead.
+</p>
+
+</div>
+
+<div class="vcodePlans">
+
+<div class="plan">
+<h3>Basic Plan</h3>
+<p>₦2,000</p>
+<small>Maximum Withdrawal: ₦40,000</small>
+<button onclick="buyPlan('Basic')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Standard Plan</h3>
+<p>₦5,000</p>
+<small>Maximum Withdrawal: ₦80,000</small>
+<button onclick="buyPlan('Standard')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Silver Plan</h3>
+<p>₦8,000</p>
+<small>Maximum Withdrawal: ₦120,000</small>
+<button onclick="buyPlan('Silver')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Gold Plan</h3>
+<p>₦10,000</p>
+<small>Maximum Withdrawal: ₦160,000</small>
+<button onclick="buyPlan('Gold')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Diamond Plan</h3>
+<p>₦12,000</p>
+<small>Maximum Withdrawal: ₦200,000</small>
+<button onclick="buyPlan('Diamond')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Platinum Plan</h3>
+<p>₦15,000</p>
+<small>Maximum Withdrawal: ₦240,000</small>
+<button onclick="buyPlan('Platinum')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Elite Plan</h3>
+<p>₦18,000</p>
+<small>Maximum Withdrawal: ₦280,000</small>
+<button onclick="buyPlan('Elite')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Royal Plan</h3>
+<p>₦20,000</p>
+<small>Maximum Withdrawal: ₦320,000</small>
+<button onclick="buyPlan('Royal')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Ultimate Plan</h3>
+<p>₦25,000</p>
+<small>Maximum Withdrawal: ₦360,000</small>
+<button onclick="buyPlan('Ultimate')">Buy Now</button>
+</div>
+
+<div class="plan">
+<h3>Infinity VIP Plan</h3>
+<p>₦30,000</p>
+<small>Maximum Withdrawal: ₦400,000</small>
+<button onclick="buyPlan('Infinity VIP')">Buy Now</button>
+</div>
+  
+</div>
+
+<div class="plan">
+<h3>VIP Plan</h3>
+<p>₦20,000</p>
+<small>Highest withdrawal limit</small>
+
+<button onclick="buyPlan('VIP')">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+<div class="noticeCard">
+
+<h3>What to send in my DM</h3>
+
+<input
+type="text"
+id="planMessage"
+readonly
+value="Select a plan first">
+
+<button id="copyPlanMessage">
+
+Copy Message
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Buy VCode Page ends here -->
+
+  <!-- ===========================
+PURCHASE PAGE
+=========================== -->
+
+<section id="purchasePage" class="page">
+
+<div class="pageHeader">
+
+<button class="backBtn" onclick="showPage('buyVcodePage')">
+<i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<h2>Purchase VCode</h2>
+
+</div>
+
+<div class="noticeCard">
+
+<h3 id="purchaseTitle">EasyPay Plan</h3>
+
+<p>
+Copy the message below and send it to our Telegram or WhatsApp.
+</p>
+
+</div>
+
+<div class="card">
+
+<textarea
+id="purchaseMessage"
+readonly
+style="height:170px;"></textarea>
+
+<button id="copyPurchaseMessage">
+
+<i class="fa-solid fa-copy"></i>
+
+Copy Message
+
+</button>
+
+</div>
+
+<div class="card">
+
+<button id="sendTelegram">
+
+<i class="fa-brands fa-telegram"></i>
+
+Send via Telegram
+
+</button>
+
+<br><br>
+
+<button id="sendWhatsapp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Send via WhatsApp
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ===========================
+WITHDRAW PAGE
+=========================== -->
+
+<section id="withdrawPage" class="page">
+
+<div class="pageHeader">
+
+<button class="backBtn" onclick="showPage('dashboard')">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</button>
+
+<h2>Withdraw</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Withdrawal Form</h3>
+
+<form id="withdrawForm">
+
+<input
+type="text"
+id="accountName"
+placeholder="Account Name"
+required>
+
+<input
+type="number"
+id="accountNumber"
+placeholder="Account Number"
+required>
+
+<select id="bankName" required>
+
+<option value="">Select Bank</option>
+
+<option>OPay</option>
+
+<option>PalmPay</option>
+
+<option>Moniepoint</option>
+
+<option>Access Bank</option>
+
+<option>GTBank</option>
+
+<option>UBA</option>
+
+<option>First Bank</option>
+
+<option>Zenith Bank</option>
+
+<option>Fidelity Bank</option>
+
+<option>Sterling Bank</option>
+
+<option>Union Bank</option>
+
+<option>Wema Bank</option>
+
+<option>Kuda Bank</option>
+
+</select>
+
+<input
+type="number"
+id="withdrawAmount"
+placeholder="Enter Withdrawal Amount"
+required>
+  
+<input
+type="text"
+id="vcode"
+placeholder="EasyPay Verification Code (VCode)"
+required>
+
+  <button type="submit">
+
+Withdraw
+
+  </button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ===========================
+REFERRAL PAGE
+=========================== -->
+
+<section id="referralPage" class="page">
+
+<div class="pageHeader">
+
+<button class="backBtn" onclick="showPage('dashboard')">
+<i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<h2>Referral</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Earn ₦50,000 Per Referral</h3>
+
+<p>
+Invite your friends to EasyPay.
+When a referral is confirmed, you earn <strong>₦50,000</strong>.
+</p>
+
+<p style="margin-top:15px;">
+After sharing, send a screenshot to my Telegram or WhatsApp DM so your reward can be verified.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Your Referral Link</h3>
+
+<input
+type="text"
+id="referralLink"
+value="https://easypay.com/ref/user001"
+readonly>
+
+<button id="copyReferral">
+
+Copy Referral Link
+
+</button>
+
+<button id="shareWhatsapp">
+
+Open WhatsApp
+
+</button>
+
+</div>
+
+<div class="noticeCard">
+
+<h3>Important</h3>
+
+<p>
+After opening WhatsApp, share your referral link to **2 groups or 5 contacts**.
+
+After sharing, take a screenshot and send it to my DM to claim your referral reward.
+</p>
+
+</div>
+
+</section>
+  <!-- ===========================
+HISTORY PAGE
+=========================== -->
+
+<section id="historyPage" class="page">
+
+<div class="pageHeader">
+
+<button class="backBtn" onclick="showPage('dashboard')">
+<i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<h2>Transaction History</h2>
+
+</div>
+
+  <div id="historyContainer"></div>!
+
+</section>
+
+  <!-- ===========================
+PROFILE PAGE
+=========================== -->
+
+<section id="profilePage" class="page">
+
+<div class="pageHeader">
+
+<button class="backBtn" onclick="showPage('dashboard')">
+<i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<h2>My Profile</h2>
+
+</div>
+
+<div class="profileCard">
+
+<h3>Account Information</h3>
+
+<p><strong>Username:</strong> <span id="profileUsername">Not Available</span></p>
+
+<p><strong>Gmail:</strong> <span id="profileEmail">Not Available</span></p>
+
+<p><strong>Nationality:</strong> <span id="profileNationality">Not Available</span></p>
+
+<p><strong>Status:</strong> <span id="profileStatus">Active</span></p>
+
+<p><strong>Current Balance:</strong> <span id="profileBalance">₦250,000</span></p>
+
+</div>
+
+<div class="card">
+
+<h3>Quick Actions</h3>
+
+<button id="openSettings">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</button>
+
+<button id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+</div>
+
+</section>
+
+  <!-- ===========================
+SETTINGS PAGE
+=========================== -->
+
+<section id="settingsPage" class="page">
+
+<div class="pageHeader">
+
+<button class="backBtn" onclick="showPage('profilePage')">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</button>
+
+<h2>Settings</h2>
+
+</div>
+
+<div class="settingItem" id="darkMode">
+
+<i class="fa-solid fa-moon"></i>
+
+<div>
+
+<h3>Dark Mode</h3>
+
+<p>Switch between Light and Dark mode</p>
+
+</div>
+
+</div>
+
+<div class="settingItem">
+
+<i class="fa-solid fa-bell"></i>
+
+<div>
+
+<h3>Notifications</h3>
+
+<p>Receive EasyPay updates and alerts</p>
+
+</div>
+
+</div>
+
+<div class="settingItem">
+
+<i class="fa-solid fa-lock"></i>
+
+<div>
+
+<h3>Privacy & Security</h3>
+
+<p>Keep your account protected</p>
+
+</div>
+
+</div>
+
+<div class="settingItem">
+
+<i class="fa-solid fa-circle-info"></i>
+
+<div>
+
+<h3>About EasyPay</h3>
+
+<p>Version 1.0.0</p>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- ===========================
+HOW TO EARN PAGE
+=========================== -->
+
+<section id="earnPage" class="page">
+
+<div class="pageHeader">
+
+<button class="backBtn" onclick="showPage('dashboard')">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</button>
+
+<h2>How To Earn</h2>
+
+</div>
+
+<div class="card">
+
+<h3>1. Sign Up Bonus</h3>
+
+<p>
+Every new user receives a <strong>₦250,000</strong> welcome bonus.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>2. Reward Bonus</h3>
+
+<p>
+Claim <strong>₦20,000</strong> every 10 minutes.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>3. Referral Reward</h3>
+
+<p>
+Earn <strong>₦50,000</strong> for every successful referral.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>4. Buy EasyPay VCode</h3>
+
+<p>
+Purchase the correct VCode to unlock your withdrawal limit. Visit our Telegram DM or WhatsApp DM if Telegram isn't available.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>5. Withdrawal Guide</h3>
+
+<p>
+Submit your bank details and valid VCode. After sharing to 2 WhatsApp groups or 5 contacts, send the screenshot to our DM for verification.
+</p>
+
+</div>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
